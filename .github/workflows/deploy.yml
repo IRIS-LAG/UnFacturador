@@ -2,7 +2,7 @@ name: Desplegar Vue a GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Se activa cada vez que subes cambios a main
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -26,7 +26,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24 # 👈 Actualizado a Node 24
           cache: 'npm'
 
       - name: Instalar dependencias
@@ -36,12 +36,12 @@ jobs:
         run: npm run build
 
       - name: Configurar Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5 # 👈 Actualizado a v5
 
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Carpeta donde Vite guarda el resultado del build
+          path: './dist'
 
       - name: Desplegar a GitHub Pages
         id: deployment
