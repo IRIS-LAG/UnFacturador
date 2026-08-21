@@ -9,7 +9,7 @@ export default defineConfig({
     vueDevTools(),
   ],
   
-  //base: '/misavaluosmaq/', //NOMBRE USADO EN GITHUB PAGES
+  base: '/UnFacturador/', //NOMBRE USADO EN GITHUB PAGES
   
   resolve: {
     alias: {
