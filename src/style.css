@@ -1,0 +1,29 @@
+:root {
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    
+    --color0: #eceff3;
+
+    --color1: #505160; 
+    --color2: #68829E; 
+    --color3: #AEBD38; 
+    --color4: #598234; 
+    --color5: #ce6815; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+html, body, #app {
+    min-height: 100%;
+    /* background: #68829E; 
+}
+body {
+    min-height: 100vh;
+    /*background: linear-gradient(122deg, rgba(104, 130, 158, 1) 14%, rgba(80, 81, 96, 1) 45%, rgba(89, 130, 52, 1) 100%);
+}
+*/
